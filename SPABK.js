@@ -26,3 +26,12 @@ class Router {
         return this;
     }
 }
+
+/**
+ * 
+ * TODO
+ * URLPattern
+ * RegExp
+ * Custom
+ * 
+ */
