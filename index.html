@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPA-BaseKit</title>
+  </head>
+  <body>
+    <div id="app">
+        index
+        <button onclick="SPA.to('/sub')">to sub</button>
+        <button onclick="SPA.to('/sub2')">to sub2</button> 
+    </div>
+    <script src="./SPABK.js"></script>
+    <script>
+      SPA = new Router(document.getElementById("app"))
+        .route("/sub", "./sub.html")
+        .route("/sub2", "./sub2.html");
+    </script>
+  </body>
+</html>
